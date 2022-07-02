@@ -1,9 +1,22 @@
 <template>
-	<p>Hello to Home page!</p>
+	<Form @test="handleTest" @onSubmit="handleSubmit" />
 </template>
 
 <script>
-export default {};
+import Form from "@/components/Note/Form.vue";
+
+export default {
+	components: { Form },
+	methods: {
+		handleSubmit(note) {
+			console.log(note);
+		},
+		handleTest(user) {
+			console.log(user.name);
+			console.log(user.age);
+		},
+	}
+};
 </script>
 
 <style lang="scss" scoped></style>

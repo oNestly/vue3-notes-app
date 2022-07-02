@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 
-const projectName = 'notes';
+const projectName = 'notes/';
 
 export default defineConfig({
   base: `/${projectName}`,
